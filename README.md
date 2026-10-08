@@ -4,8 +4,8 @@ Maquette indépendante d’une vitrine premium pour **Le Vi Aï Pi Altitude**, r
 
 ## Liens
 
-- Site Cloudflare Pages : à renseigner après publication
-- Dépôt GitHub : à renseigner après publication
+- Site Cloudflare Pages : [vi-ai-pi-altitude.pages.dev](https://vi-ai-pi-altitude.pages.dev)
+- Dépôt GitHub : [AMWEBDESIGNER/vi-ai-pi-altitude](https://github.com/AMWEBDESIGNER/vi-ai-pi-altitude)
 - Téléphone public : 07 88 03 69 55
 
 ## Sources publiques

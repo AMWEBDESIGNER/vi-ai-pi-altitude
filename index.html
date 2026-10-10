@@ -1,140 +1,270 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#172731">
-  <meta name="description" content="Le Vi Aï Pi, restaurant et bar musical d’altitude à Superdévoluy, au départ du télésiège de la Festoure.">
-  <title>Le Vi Aï Pi — Music bar d’altitude à Superdévoluy</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/anton.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/hanken.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/logo.png" as="image">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="loader" aria-hidden="true">
-    <img src="assets/logo.png" alt="">
-    <div class="loader-line"><i></i></div>
-    <span>Montée à 1 850 m</span>
-  </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#172731" />
+    <meta
+      name="description"
+      content="Le Vi Aï Pi, restaurant et bar musical d’altitude à Superdévoluy, au départ du télésiège de la Festoure."
+    />
+    <title>Le Vi Aï Pi — Music bar d’altitude à Superdévoluy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/anton.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/hanken.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="assets/logo.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <img src="assets/logo.png" alt="" />
+      <div class="loader-line"><i></i></div>
+      <span>Montée à 1 850 m</span>
+    </div>
 
-  <canvas id="snow" aria-hidden="true"></canvas>
-  <div class="cursor" aria-hidden="true"><span></span></div>
+    <canvas id="snow" aria-hidden="true"></canvas>
+    <div class="cursor" aria-hidden="true"><span></span></div>
 
-  <header class="nav">
-    <a class="nav-mark" href="#top" aria-label="Retour en haut">
-      <img src="assets/logo.png" alt="Le Vi Aï Pi">
-    </a>
-    <nav aria-label="Navigation principale">
-      <a href="le-lieu.html">Le lieu</a>
-      <a href="restaurant.html">Restaurant</a>
-      <a href="soirees-groupes.html">Soirées & groupes</a>
-      <a href="infos-pratiques.html">Infos</a>
-    </nav>
-    <a class="nav-book magnetic" href="tel:+33788036955">Réserver <span>↗</span></a>
-  </header>
+    <header class="nav">
+      <a class="nav-mark" href="#top" aria-label="Retour en haut">
+        <img src="assets/logo.png" alt="Le Vi Aï Pi" />
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="le-lieu.html">Le lieu</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="soirees-groupes.html">Soirées & groupes</a>
+        <a href="infos-pratiques.html">Infos</a>
+      </nav>
+      <a class="nav-book magnetic" href="tel:+33788036955"
+        >Réserver <span>↗</span></a
+      >
+    </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="ridge ridge-a"></div>
-        <div class="ridge ridge-b"></div>
-        <div class="sun"></div>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="ridge ridge-a"></div>
+          <div class="ridge ridge-b"></div>
+          <div class="sun"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Superdévoluy · Festoure</p>
+          <h1 id="hero-title" class="split">
+            Là-haut,<br /><em>ça vibre.</em>
+          </h1>
+          <p class="hero-intro reveal">
+            Restaurant d’altitude, grande terrasse, cheminée centrale et bar
+            musical au cœur du domaine.
+          </p>
+        </div>
+        <div class="hero-emblem" data-tilt>
+          <span class="orbit orbit-one"></span
+          ><span class="orbit orbit-two"></span>
+          <img
+            src="assets/logo.png"
+            alt="Logo Le Vi Aï Pi — cerf sur les sommets"
+          />
+        </div>
+        <a class="scroll-cue" href="#experience"
+          ><span>Découvrir</span><i></i
+        ></a>
+        <div class="altitude-stamp">
+          <b>1 850</b><small>mètres<br />d’altitude</small>
+        </div>
+      </section>
+
+      <section class="manifesto" id="experience">
+        <div class="manifesto-tag reveal">Le spot de la Festoure</div>
+        <p class="manifesto-text">
+          Un chalet posé <span>sur les pistes</span>. Le feu crépite, le soleil
+          traverse les baies vitrées et, à midi,
+          <span>la musique monte</span> avec l’altitude.
+        </p>
+        <div class="manifesto-line"></div>
+      </section>
+
+      <section class="photo-stage">
+        <figure class="photo-main image-reveal">
+          <img
+            src="assets/terrace.webp"
+            alt="Terrasse du Vi Aï Pi sur les pistes"
+            loading="lazy"
+          />
+          <figcaption>
+            <span>01</span> Plein soleil, face au snowpark
+          </figcaption>
+        </figure>
+        <div class="floating-card reveal">
+          <span class="pulse"></span>
+          <p>Music bar</p>
+          <strong>DJ résident<br />12:00 — 17:00</strong>
+        </div>
+        <p class="vertical-note">SUPERDÉVOLUY — HAUTES-ALPES</p>
+      </section>
+
+      <section class="features">
+        <article class="feature feature-dark reveal">
+          <span>01 / JOUR</span>
+          <h2>Self, salle cosy<br />& vue montagne</h2>
+          <p>
+            Une grande salle avec self, un espace vitré plus intime et une
+            cheminée centrale pour déjeuner au chaud.
+          </p>
+          <div class="wave" aria-hidden="true"></div>
+        </article>
+        <article class="feature feature-red reveal">
+          <span>02 / APRÈS-SKI</span>
+          <h2>Le son prend<br />de l’altitude</h2>
+          <p>
+            Bar musical, DJ et carré VIP : l’adresse bascule doucement du
+            déjeuner au dancefloor.
+          </p>
+          <div class="equalizer" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </article>
+        <article class="feature feature-photo image-reveal">
+          <img
+            src="assets/interior.webp"
+            alt="Ambiance intérieure du Vi Aï Pi"
+            loading="lazy"
+          />
+          <span>03 / SOIR</span>
+          <div>
+            <h2>Soirées<br />montagnardes</h2>
+            <p>
+              Montée et descente en chenillette, uniquement sur réservation.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="menu" id="carte">
+        <div class="menu-heading">
+          <p class="eyebrow reveal">Après l’effort</p>
+          <h2 class="split">Le goût<br /><em>du sommet.</em></h2>
+          <p class="reveal">
+            La carte détaillée et les tarifs peuvent évoluer selon la saison.
+            Voici les spécialités annoncées pour les soirées montagnardes.
+          </p>
+        </div>
+        <div class="menu-list">
+          <article class="menu-row reveal">
+            <span>01</span>
+            <h3>Tartiflette</h3>
+            <p>Le grand classique à partager au coin du feu.</p>
+            <i>↗</i>
+          </article>
+          <article class="menu-row reveal">
+            <span>02</span>
+            <h3>Raclette</h3>
+            <p>Version généreuse pour une soirée en altitude.</p>
+            <i>↗</i>
+          </article>
+          <article class="menu-row reveal">
+            <span>03</span>
+            <h3>Fondue savoyarde</h3>
+            <p>À réserver avec la montée en chenillette.</p>
+            <i>↗</i>
+          </article>
+          <article class="menu-row reveal">
+            <span>04</span>
+            <h3>Fondue bourguignonne</h3>
+            <p>Proposée parmi les formules de soirée.</p>
+            <i>↗</i>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Galerie du Vi Aï Pi">
+        <figure class="gallery-tall image-reveal">
+          <img
+            src="assets/altitude.webp"
+            alt="Le Vi Aï Pi dans le domaine de Superdévoluy"
+            loading="lazy"
+          />
+        </figure>
+        <div class="gallery-copy reveal">
+          <span>GRANDS ESPACES · FEU CENTRAL · TERRASSE</span>
+          <p>
+            Un refuge de jour.<br />Une scène à midi.<br />Une aventure le soir.
+          </p>
+        </div>
+        <figure class="gallery-wide image-reveal">
+          <img
+            src="assets/experience.webp"
+            alt="Expérience en altitude au Vi Aï Pi"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+
+      <section class="visit" id="infos">
+        <div class="visit-title">
+          <p class="eyebrow reveal">Préparer la montée</p>
+          <h2 class="split">Rendez-vous<br /><em>là-haut.</em></h2>
+        </div>
+        <div class="visit-grid">
+          <div class="info-block reveal">
+            <span>OÙ</span>
+            <p>
+              Départ du télésiège<br />de la Festoure<br />05250 Superdévoluy
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Le+Vi+Ai+Pi+Altitude+Superdevoluy"
+              target="_blank"
+              rel="noopener"
+              >Itinéraire ↗</a
+            >
+          </div>
+          <div class="info-block reveal">
+            <span>HIVER</span>
+            <p>
+              Ouvert 7j/7<br />09:00 — 17:00<br /><small
+                >Selon ouverture des remontées</small
+              >
+            </p>
+          </div>
+          <div class="info-block reveal">
+            <span>CONTACT</span>
+            <p>Soirées & groupes<br />sur réservation</p>
+            <a href="tel:+33788036955">07 88 03 69 55 ↗</a>
+          </div>
+        </div>
+        <a class="big-cta magnetic" href="tel:+33788036955"
+          ><span>Réserver une table</span><i>↗</i></a
+        >
+        <p class="notice">
+          Horaires issus de la fiche officielle, susceptibles d’évoluer.
+          Vérifiez avant votre venue.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/logo.png" alt="Le Vi Aï Pi" />
+      <p>Restaurant · Music bar d’altitude</p>
+      <div>
+        <a href="contact.html">Contact</a
+        ><a href="mentions-legales.html">Mentions légales</a
+        ><a href="confidentialite.html">Confidentialité</a
+        ><a href="#top">Haut de page ↑</a>
       </div>
-      <div class="hero-copy">
-        <p class="eyebrow reveal">Superdévoluy · Festoure</p>
-        <h1 id="hero-title" class="split">Là-haut,<br><em>ça vibre.</em></h1>
-        <p class="hero-intro reveal">Restaurant d’altitude, grande terrasse, cheminée centrale et bar musical au cœur du domaine.</p>
-      </div>
-      <div class="hero-emblem" data-tilt>
-        <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
-        <img src="assets/logo.png" alt="Logo Le Vi Aï Pi — cerf sur les sommets">
-      </div>
-      <a class="scroll-cue" href="#experience"><span>Découvrir</span><i></i></a>
-      <div class="altitude-stamp"><b>1 850</b><small>mètres<br>d’altitude</small></div>
-    </section>
+    </footer>
 
-    <section class="manifesto" id="experience">
-      <div class="manifesto-tag reveal">Le spot de la Festoure</div>
-      <p class="manifesto-text">Un chalet posé <span>sur les pistes</span>. Le feu crépite, le soleil traverse les baies vitrées et, à midi, <span>la musique monte</span> avec l’altitude.</p>
-      <div class="manifesto-line"></div>
-    </section>
-
-    <section class="photo-stage">
-      <figure class="photo-main image-reveal">
-        <img src="assets/terrace.webp" alt="Terrasse du Vi Aï Pi sur les pistes" loading="lazy">
-        <figcaption><span>01</span> Plein soleil, face au snowpark</figcaption>
-      </figure>
-      <div class="floating-card reveal">
-        <span class="pulse"></span>
-        <p>Music bar</p>
-        <strong>DJ résident<br>12:00 — 17:00</strong>
-      </div>
-      <p class="vertical-note">SUPERDÉVOLUY — HAUTES-ALPES</p>
-    </section>
-
-    <section class="features">
-      <article class="feature feature-dark reveal">
-        <span>01 / JOUR</span>
-        <h2>Self, salle cosy<br>& vue montagne</h2>
-        <p>Une grande salle avec self, un espace vitré plus intime et une cheminée centrale pour déjeuner au chaud.</p>
-        <div class="wave" aria-hidden="true"></div>
-      </article>
-      <article class="feature feature-red reveal">
-        <span>02 / APRÈS-SKI</span>
-        <h2>Le son prend<br>de l’altitude</h2>
-        <p>Bar musical, DJ et carré VIP : l’adresse bascule doucement du déjeuner au dancefloor.</p>
-        <div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      </article>
-      <article class="feature feature-photo image-reveal">
-        <img src="assets/interior.webp" alt="Ambiance intérieure du Vi Aï Pi" loading="lazy">
-        <span>03 / SOIR</span>
-        <div><h2>Soirées<br>montagnardes</h2><p>Montée et descente en chenillette, uniquement sur réservation.</p></div>
-      </article>
-    </section>
-
-    <section class="menu" id="carte">
-      <div class="menu-heading">
-        <p class="eyebrow reveal">Après l’effort</p>
-        <h2 class="split">Le goût<br><em>du sommet.</em></h2>
-        <p class="reveal">La carte détaillée et les tarifs peuvent évoluer selon la saison. Voici les spécialités annoncées pour les soirées montagnardes.</p>
-      </div>
-      <div class="menu-list">
-        <article class="menu-row reveal"><span>01</span><h3>Tartiflette</h3><p>Le grand classique à partager au coin du feu.</p><i>↗</i></article>
-        <article class="menu-row reveal"><span>02</span><h3>Raclette</h3><p>Version généreuse pour une soirée en altitude.</p><i>↗</i></article>
-        <article class="menu-row reveal"><span>03</span><h3>Fondue savoyarde</h3><p>À réserver avec la montée en chenillette.</p><i>↗</i></article>
-        <article class="menu-row reveal"><span>04</span><h3>Fondue bourguignonne</h3><p>Proposée parmi les formules de soirée.</p><i>↗</i></article>
-      </div>
-    </section>
-
-    <section class="gallery" aria-label="Galerie du Vi Aï Pi">
-      <figure class="gallery-tall image-reveal"><img src="assets/altitude.webp" alt="Le Vi Aï Pi dans le domaine de Superdévoluy" loading="lazy"></figure>
-      <div class="gallery-copy reveal"><span>GRANDS ESPACES · FEU CENTRAL · TERRASSE</span><p>Un refuge de jour.<br>Une scène à midi.<br>Une aventure le soir.</p></div>
-      <figure class="gallery-wide image-reveal"><img src="assets/experience.webp" alt="Expérience en altitude au Vi Aï Pi" loading="lazy"></figure>
-    </section>
-
-    <section class="visit" id="infos">
-      <div class="visit-title">
-        <p class="eyebrow reveal">Préparer la montée</p>
-        <h2 class="split">Rendez-vous<br><em>là-haut.</em></h2>
-      </div>
-      <div class="visit-grid">
-        <div class="info-block reveal"><span>OÙ</span><p>Départ du télésiège<br>de la Festoure<br>05250 Superdévoluy</p><a href="https://www.google.com/maps/search/?api=1&query=Le+Vi+Ai+Pi+Altitude+Superdevoluy" target="_blank" rel="noopener">Itinéraire ↗</a></div>
-        <div class="info-block reveal"><span>HIVER</span><p>Ouvert 7j/7<br>09:00 — 17:00<br><small>Selon ouverture des remontées</small></p></div>
-        <div class="info-block reveal"><span>CONTACT</span><p>Soirées & groupes<br>sur réservation</p><a href="tel:+33788036955">07 88 03 69 55 ↗</a></div>
-      </div>
-      <a class="big-cta magnetic" href="tel:+33788036955"><span>Réserver une table</span><i>↗</i></a>
-      <p class="notice">Horaires issus de la fiche officielle, susceptibles d’évoluer. Vérifiez avant votre venue.</p>
-    </section>
-  </main>
-
-  <footer>
-    <img src="assets/logo.png" alt="Le Vi Aï Pi">
-    <p>Restaurant · Music bar d’altitude</p>
-    <div><a href="contact.html">Contact</a><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a><a href="#top">Haut de page ↑</a></div>
-  </footer>
-
-  <script src="app.js"></script>
+    <script src="app.js"></script>
+<script src="site-enhance.js"></script>
 </body>
 </html>

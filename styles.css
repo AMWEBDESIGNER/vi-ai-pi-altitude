@@ -25,3 +25,5 @@ footer{background:var(--ink);color:white;padding:65px var(--pad) 35px;display:gr
   .hero{padding-top:138px}
   .page-body .page-main{padding-top:122px!important}
 }
+main>section{animation:vi-breathe .9s cubic-bezier(.2,.75,.2,1) both}main>section:nth-child(2){animation-delay:.1s}main>section:nth-child(3){animation-delay:.2s}main>section:nth-child(4){animation-delay:.3s}a,button{transition:transform .25s ease,opacity .25s ease}a:hover,button:hover{transform:translateY(-2px)}@keyframes vi-breathe{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){main>section{animation:none!important}a,button{transition:none}}
+/* Scroll-driven reveal pattern adapted from https://codepen.io/oscar-jite/pen/qBzwOVq and the IntersectionObserver API. */@supports(animation-timeline:view()){main>section{animation-timeline:view(block);animation-range:entry 0% cover 34%;animation-iteration-count:1}}

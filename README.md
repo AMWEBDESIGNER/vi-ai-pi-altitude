@@ -44,3 +44,7 @@ Le logo et les photographies utilisés proviennent de la fiche touristique offic
 - horaires le jour de la venue, dépendants de la météo et des remontées.
 
 Le site est statique et se déploie directement à la racine, sans commande de compilation.
+
+## Motion design et provenance du code
+
+Animations réalisées en CSS vanilla, avec respect de `prefers-reduced-motion`, et une révélation progressive inspirée du pattern public [Scroll animation: IntersectionObserver and CSS](https://codepen.io/oscar-jite/pen/qBzwOVq). La logique reste locale, légère et adaptée à l’identité de chaque établissement ; aucune dépendance payante ni contenu généré n’est requis.
